@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "adventofcode-2023"
+version = "0.0.1"
+description = ""
+authors = ["Jason Hightower"]
+readme = "README.md"
+packages = [
+    {include = "day*"},
+    {include = "support"},
+    {include = "tests"},
+]    
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
