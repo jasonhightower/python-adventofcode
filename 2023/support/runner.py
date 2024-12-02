@@ -10,7 +10,7 @@ def main(day: int, part: int, args=None):
     if is_test(args):
         if len(args) == 1:
             args = None
-        test(solution, day, part, args)
+        run_tests(solution, day, part, args)
     else:
         run(solution, day, args)
 
@@ -26,7 +26,7 @@ def run(solution, day: int, args=None):
             print(result)
 
 
-def test(solution, day: int, part: int, args=None):
+def run_tests(solution, day: int, part: int, args=None):
     with open(f"day{day}/part{part}_test.txt") as f:
         input = [line.rstrip('\n') for line in f]
         expected = int(input[0])

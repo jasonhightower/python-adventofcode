@@ -5,7 +5,7 @@ description = ""
 authors = ["Jason Hightower"]
 readme = "README.md"
 packages = [
-    {include = "day*"},
+#    {include = "day*"},
     {include = "support"},
     {include = "tests"},
 ]    
@@ -13,6 +13,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pytest = "^7.4"
+
 
 
 [build-system]
